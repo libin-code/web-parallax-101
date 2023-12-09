@@ -1,3 +1,7 @@
 import "./basic.css";
 
-// print your code here...
+const scene = document.getElementById("scene");
+
+new Parallax(scene, {
+    relativeInput: true,
+});
