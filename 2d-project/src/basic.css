@@ -1,0 +1,46 @@
+:root {
+    --screen-top: 200px;
+}
+h1 {
+    margin-top: var(--screen-top);
+    text-align: center;
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 90px auto;
+    border: 6px solid black;
+    box-shadow: 0 0 128px gray;
+}
+.layer-1 {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 400px;
+    height: 250px;
+    border-top-left-radius: 422px 44px;
+    border-top-right-radius: 220px 120px;
+    background: darkblue;
+}
+.layer-2 {
+    --size: 60px;
+    position: absolute;
+    top: 200px;
+    right: 80px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+    background: black;
+    box-shadow: 0 0 64px #666;
+}
+.layer-3 {
+    --size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+    background: white;
+}
